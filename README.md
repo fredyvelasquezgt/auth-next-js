@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # Auth project
 
+Understanding auth with next js tool
+
 ## Getting Started
 
 First, run the development server:
