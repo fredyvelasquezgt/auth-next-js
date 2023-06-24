@@ -6,12 +6,6 @@ Understanding auth with next js tool
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-# or
-```
-
 
 
 
