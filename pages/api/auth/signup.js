@@ -18,7 +18,6 @@ async function handler(req, res) {
   const client = await connectToDatabase();
   const db = client.db();
 
-  db.collection("users");
   db.collection('users').insertOne({
       email: email,
       password: password
