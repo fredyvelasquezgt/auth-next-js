@@ -4,6 +4,9 @@ import { verifyPassword } from "../../../lib/auth";
 import { connectToDatabase } from "../../../lib/db";
 
 export default NextAuth({
+    session: {
+        jwt: true
+    },
     providers: [
         Providers.Credentials({
             async authorize(credentials) {
@@ -23,7 +26,7 @@ export default NextAuth({
                     throw new Error ('could not log you in')
                 }
 
-                
+                return {email: user.email};
 
                 client.close();
             }
