@@ -25,6 +25,8 @@ async function handler(req, res) {
       email: email,
       password: password
   })
+
+  res.status(201).json({message: 'created user'})
 }
 
 export default hanlder;
