@@ -19,6 +19,10 @@ async function handler(req, res) {
   const db = client.db();
 
   db.collection("users");
+  db.collection('users').insertOne({
+      email: email,
+      password: password
+  })
 }
 
 export default hanlder;
