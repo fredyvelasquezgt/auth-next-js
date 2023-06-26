@@ -40,6 +40,9 @@ function AuthForm() {
       const result = await signIn('credentials', {redirect: false, email: enteredEmail, password: enteredPassword})
 
       console.log(result)
+      if(!result.error) {
+        //use state
+      }
     } else {
       try {
         const result = await createdUser(enteredEmail, enteredPassword);
