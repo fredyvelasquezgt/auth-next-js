@@ -5,8 +5,7 @@ import classes from './main-navigation.module.css';
 function MainNavigation() {
   const [session, loading] = useSession();
 
-  console.log(loading);
-  console.log(session)
+  
 
   return (
     <header className={classes.header}>
@@ -20,9 +19,12 @@ function MainNavigation() {
           <li>
             <Link href='/auth'>Login</Link>
           </li>
-          <li>
+          {session && (
+            <li>
             <Link href='/profile'>Profile</Link>
           </li>
+          )}
+          
           <li>
             <button>Logout</button>
           </li>
